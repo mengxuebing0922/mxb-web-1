@@ -1,0 +1,21 @@
+p{
+	text-indent:2em
+} 
+.yiji{
+    font:20px "微软雅黑";
+    color:#686868;
+}
+.erji{
+	font: 12px Arial;
+	color:#a9a8a8;
+}
+.heng{
+	list-style: none;
+	display:inline-block;
+}
+#blue{
+    color:#22a3d3;
+}
+#lan{
+    color:#22a3d3;
+}
