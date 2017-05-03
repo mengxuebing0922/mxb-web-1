@@ -1,0 +1,26 @@
+.rongyu{
+	font-size:14px;
+	}
+.rongyu:hover{
+	color:#b9f605;
+	text-decoration:none; 
+}
+.liebiao{
+	list-style-type:square; 
+}
+.grey{
+	background-color: #e0e0e0;
+	height:50px;
+	text-align: center;
+}
+.sanjiao{
+
+	text-align: center;
+	background-image: url("../image/menulist.gif");
+ }
+
+#title{
+
+	text-align: center;
+	background-image: url("../image/menutitle.gif");
+}

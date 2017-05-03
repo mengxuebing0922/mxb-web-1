@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+}
+
+.news{
+	font:bolder 16px "微软雅黑";
+	color:#65a7d0;
+}
+.liebiao{
+	list-style-type: square;
+}
+.grey{
+	height: 50px;
+	background-color: #e0e0e0;
+}
+.qq{
+	background-image: url("image/qq.gif");
+	background-position: 5% 50%;
+	background-repeat: no-repeat;
+}
+.bgc{
+	background-color: #e0e0e0;
+}
