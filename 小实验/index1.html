@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index1</title>
+   <link rel="stylesheet" type="text/css" href="css1/index.css">
+     
+</head>
+<body>
+     <div class="nav">
+     <div class="nav_content">
+        <!-- <img src="image1/5.png" width="150px"> -->
+        <ul class="nav_title">
+            <li><a href="#" class="checked">首页</a></li>
+    	    <li><a href="#">第一餐厅</a></li>
+    	    <li><a href="#">第二餐厅</a></li>
+    	    <li><a href="#">第三餐厅</a></li>
+    	    <li><a href="#">第四餐厅</a></li>
+    	    <li><a href="#">第五餐厅</a></li>
+    	    <li><a href="#">清真餐厅</a></li>
+    	    <li><a href="#">餐饮服务</a></li>
+       </ul>
+    </div>
+        <div class="nav_can">
+         <img src="image1/title.png" alt="">
+       </div>
+    </div>
+
+    <div class="content">
+    <div id="colee_right" style="overflow:hidden;width:945px;">
+        <table cellpadding="0" cellspacing="0" border="0">
+         <tr>
+           <td id="colee_right1" valign="top" align="center">
+           <table cellpadding="2" cellspacing="0" border="0">
+        <tr align="center">
+           <td><p><img src="image1/st/1_cai.jpg"></p></td>
+           <td><p><img src="image1/st/1_cai2.jpg"></p></td>
+           <td><p><img src="image1/st/1_cai3.jpg"></p></td>
+           <td><p><img src="image1/st/1_fan.jpg"></p></td>
+           <td><p><img src="image1/st/1_mian.jpg"></p></td>
+           <td><p><img src="image1/st/2_cai.jpg"></p></td>
+           <td><p><img src="image1/st/2_mantou.jpg"></p></td>
+           <td><p><img src="image1/st/123_yuan.jpg"></p></td>
+         </tr>
+        </table>
+       </td>
+         <td id="colee_right2" valign="top"></td>
+       </tr>
+     </table>
+    </div>
+
+
+    <script>
+     var speed=30//速度数值越大速度越慢
+     var colee_right2=document.getElementById("colee_right2");
+     var colee_right1=document.getElementById("colee_right1");
+    var colee_right=document.getElementById("colee_right");
+    colee_right2.innerHTML=colee_right1.innerHTML 
+    function Marquee4(){
+    if(colee_right.scrollLeft<=0)
+    colee_right.scrollLeft+=colee_right2.offsetWidth
+    else{
+    colee_right.scrollLeft--
+    }
+    }
+    var MyMar4=setInterval(Marquee4,speed)
+    colee_right.onmouseover=function() {clearInterval(MyMar4)}
+    colee_right.onmouseout=function() {MyMar4=setInterval(Marquee4,speed)}
+   </script>
+	     <div class="content_1">
+	        <a href="#"><img src="image1/5.jpg" alt=""></a><br/>饺子是中国的传统主食，是大多数人喜爱的食物。主食堂二餐厅的饺子结合传统工艺，将美味发挥的淋漓尽致。而且价格公道哦。
+	     </div>
+	     <div class="content_2">
+	       汤面指带放有调味品汤汁的面条，以苏式汤面为代表，出自清俞正燮《癸巳存稿·面条子》：“《伤寒论》云：食以索饼。营养充足。 <a href="#"><img src="image1/7.jpg" alt=""></a>
+	     </div>
+	     <div class="content_3">
+	       <a href="#"><img src="image1/st/3_liangcai.jpg" alt=""></a><br>凉菜在饮食业俗称冷荤或冷盘。它是具有独特风格，选料精细、口味干香、脆嫩、爽口不腻,造形整齐美观，拼摆和谐悦目。
+	     </div>
+	     <div class="content_4">
+	       米饭是中国、日本和韩国等东亚地区最主要的粮食,米饭补中益气适宜肤色没有光华，失去红润、手脚冰冷的人群。还可健脾养胃，明目<a href="#"><img src="image1/3-mifan.jpg" alt=""></a><br/>
+	     </div>
+	     <div class="content_5">
+	        <a href="#"><img src="image1/3_cai4.jpg" alt=""></a><br/>菜品不但有利于人的生长发育,更重要的是能提高人体免疫功能, 促进肝脏解毒,增强人的体质。小伙伴们可以选择每次选些菜品入食。
+	     </div>
+	     <div class="content_6">
+	        搭配：吃饭是一门大学问，怎么样进行荤素搭配也是有讲究的，一个人吃饭,不一定非常复杂,但同样可以做到有荤有素,有干有稀,粗细搭配.<a href="#"><img src="image1/6.jpg" alt=""></a><br/>
+	     </div>
+	 </div>
+
+     <div class="banner">
+        <!-- <img src="image1/bj.jpg" width="100%"> -->
+
+     </div>
+     
+     <div class="bottom">
+     <div class="text">地址：河北师范大学主食堂，小食堂<br>
+     联系电话：XXXXXXXXXXX<br/>
+     邮箱：XXXXXXXXXX@163.com</div>
+     </div>
+   
+</body>
+</html>
