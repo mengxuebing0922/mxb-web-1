@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+     #picScroll{
+   	height: 350px;
+	width:1000px;
+	white-space: nowrap;
+    overflow:hidden; 
+    }
+	</style>
+	<script>
+       window.onload=function(){
+       	var speed=10;
+	     var picS=document.getElementById("picScroll");
+	     var picS1=document.getElementById("picScroll1");
+	     var picS2=document.getElementById("picScroll2");
+	     picS2.innerHTML=picS1.innerHTML; 
+	     function changeToLeft(){
+	          if(picS.scrollLeft >= picS1.offsetWidth)
+	              picS.scrollLeft =0;
+	          else{
+	              picS.scrollLeft++;
+	             }
+	          }
+	     setTimeout(changeToLeft,10)//定时的调用当前这个方法
+	     var MyMar=setInterval(changeToLeft,speed);
+	     picS.onmouseover=function() {clearInterval(MyMar)};
+	     picS.onmouseout=function() {MyMar=setInterval(changeToLeft,speed)};
+
+	     //为“用户名”添加验证函数，当失去焦点时调用函数
+			var username = document.getElementById("username");	
+			username.onblur = checkUsername;
+		} 
+		
+	</script>
+</head>
+<body>
+	<div id="picScroll">
+        <span id="picScroll1">
+			<img src="images/banner5.jpg" />
+			<img src="images/banner1.jpg" />
+			<img src="images/banner2 (2).jpg" />
+			<img src="images/banner3.jpg" />
+			<img src="images/banner4.jpg" />
+		<span id="picScroll2"></span>
+		</div>
+</body>
+</html>
